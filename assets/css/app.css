@@ -1,0 +1,217 @@
+/*
+* ---------- Custom Css ----------
+*/
+
+/* Gloabl */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2c3e50;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid rgb(84, 94, 104);
+}
+
+.section {
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+/* Section Home */
+
+.section.sectionHome {
+	background: #c0392b;
+	height: 800px;
+	text-align: center;
+	background-size: cover;
+	-webkit-animation: random 5s infinite;
+     animation: random 20s infinite;
+}
+
+/* Changing Color for section Home */
+@keyframes  random {
+    15% { background-color: #16a085; } 
+    30% { background-color: #8e44ad; } 
+    45% { background-color: green; } 
+    60% { background-color: #2c3e50; }
+    75% { background-color: #e67e22; }  
+}
+
+/*
+@keyframes mymove{
+    form{background-color: #38dc58; }
+    to{background-color: #9b40f1;}
+}
+YOU CAN USE LIKE IT TOO :d
+*/
+
+.welcomDiv {
+	color: #fff;
+	font-family: aclonica;
+	margin-top: 25%;
+}
+
+.welcomDiv h1 {
+	font-size: 80px;
+	text-shadow: 0 0 8px #2c3e50;
+}
+
+.welcomDiv h3 {
+	text-shadow: 0 0 5px #2c3e50;
+}
+
+.arrowDown {
+	margin-top: 120px;
+}
+
+/* Section Two */
+.sectionTow {
+	position: relative;
+	text-align: center;
+}
+
+.sectionTwo img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 25%;
+}
+
+.centredInImage {
+	position: absolute;
+    top: 151%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+	color: #fff;
+	margin-left: 15px;
+}
+
+.centredInImage h1 {
+	font-size: 68px;
+	color: #ecf0f1;
+}
+
+.asideIch {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin-left: 350%;
+}
+
+/*
+ * section Three
+ * --------------------------------------------------
+ */
+ 
+ .asideImg {
+	 max-width: 100%;
+	 margin: 0;
+ }
+
+ .asideText {
+	 background-color: #2c3e50;
+	 color: #fff;
+	 margin: 0;
+	 margin-top: 30px;
+	 text-align: center;
+	 padding: 10px;
+	 max-width: 100%;
+	 border: 1px solid #fff;
+ }
+
+ .asideText h1 {
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size: 50px;
+	 margin: 10px;
+ }
+
+ul li {
+	float: right;
+	list-style-type: none;
+	text-align: center;
+}
+
+li a {
+	text-decoration: inherit;
+}
+
+.fa {
+	color: #fff;
+}
+
+/* Section Fourth */
+.section.section-fourth {
+	background-color: #2c3e50;
+	color: #fff;
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: url(../img/stars.png);
+	background-size: cover;
+	border-radius: 0;
+	color: #fff;
+	-webkit-animation: randomv 5s infinite;
+     animation: randomv 10s infinite;
+}
+
+/* Changing Color for section Home */
+@keyframes  randomv {
+    15% { background-image:  url(../img/stars2.jpeg); }  
+    20% { background-image:  url(../img/stars2.jpeg); } 
+}
+
+.jumbotron h1 {
+	text-shadow: 0 0 10px #000000;
+}
+
+.jumbotron h3 {
+	text-shadow: 0 0 10px #000000;
+}
+
+/* Font Awesome Colors */
+
+.fa-html5 {
+	color: #d35400;
+	text-shadow: 0 0 10px #000000;
+}
+
+.fa-css3 {
+	color: #2980b9;
+	text-shadow: 0 0 10px #000000;
+}
+
+.fa-desktop {
+	color: #013243;
+	text-shadow: 0 0 10px #000000;
+}
+
+.fa-wordpress {
+	color: #000000;
+	text-shadow: 0 0 10px #000000;
+}
+
+.fa-heartbeat {
+	color: #e74c3c;
+	text-shadow: 0 0 10px #000000;
+}
+
+/* Footer */
+.footer {
+	color: #fff;
+	margin: 10px;
+}
