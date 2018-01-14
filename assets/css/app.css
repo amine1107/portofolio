@@ -171,8 +171,8 @@ li a {
 
 /* Changing Color for section Home */
 @keyframes  randomv {
-    15% { background-image:  url(../img/stars.png); }  
-    20% { background-image:  url(../img/stars.png); } 
+    15% { background-image:  url(../img/stars2.jpeg); }  
+    20% { background-image:  url(../img/stars2.jpeg); } 
 }
 
 .jumbotron h1 {
