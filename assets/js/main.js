@@ -148,5 +148,35 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
- 
+
+
+
+jQuery(document).ready(function () {
+    function openFancybox() {
+        setTimeout(function () {
+            jQuery('#popuplink').trigger('click');
+        }, 8000);
+    };
+    var visited = jQuery.cookie('visited');
+    if (visited == 'yes') {
+         // second page load, cookie active
+    } else {
+        openFancybox(); // first page load, launch fancybox
+    }
+    jQuery.cookie('visited', 'yes', {
+        expires: 365 // the number of days cookie  will be effective
+    });
+    jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
+});
+
+twemoji.parse(document.getElementsByTagName('ul')[0], {size: 72});
+/*(function (img, metaKey, i) {
+  function copyToClipboard(e) {
+    prompt('Copy to clipboard via ' + metaKey + '+C and Enter', this.alt);
+  }
+  for (i = 0; i < img.length; img[i++].onclick = copyToClipboard) {}
+}(
+  document.getElementsByTagName('img'),
+  /\b(?:Mac |i)OS\b/i.test(navigator.userAgent) ? 'Command' : 'Ctrl'
+));*/ 
 
